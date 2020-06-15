@@ -1,0 +1,19 @@
+{
+  "name": "code_challenge",
+  "version": "1.0.0",
+  "description": "last fm search app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raypugh07/code_challenge.git"
+  },
+  "author": "Raymond Pugh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raypugh07/code_challenge/issues"
+  },
+  "homepage": "https://github.com/raypugh07/code_challenge#readme"
+}
