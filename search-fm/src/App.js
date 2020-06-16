@@ -24,11 +24,11 @@ function App() {
           dispatch({
             type:'START'  //initializes search
           })
-          fetch(`${API}&artist=${artistName}`) //gets array from api
+          fetch(`${API2}&artist=${artistName}`) //gets array from api
           .then(response => response.json())
           .then(jsonResponse =>{
             if (!jsonResponse.error) {
-             const artists = jsonResponse.artist.similar[Object.keys(jsonResponse.artist.similar)[0]];  //artist.similar accesses array of similar artists
+             const artists = jsonResponse.results.artistmatches[Object.keys(jsonResponse.results.artistmatches)[0]];  //artist.similar accesses array of similar artists
               dispatch({
                 type:'SUCCESS',
                payload:artists
@@ -61,13 +61,16 @@ function App() {
         
       </div>
            
-    <h2>Similar artists:</h2>
             <div>
-              {artists.map((artist,index)=>(  //grabs similar artists withing the array
+
+            <h2>Results:</h2>
+
+              {artists.map((artist,index)=>(  //grabs similar artists within the array
                 <SimilarArtist 
                 key={`${index}-${artist.name}`}  //uniquely identifies each item in array by name
-                artist={artist} //links to similartist.js component
+                artist={artist} //links to similarartist.js component
                 />
+                
               ))}
             </div>
 
