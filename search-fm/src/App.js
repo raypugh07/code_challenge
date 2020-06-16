@@ -2,7 +2,7 @@ import React, { useEffect,useReducer } from 'react';
 import {BrowserRouter as Router,Switch,Route,Link} from 'react-router-dom'
 import './App.css';
 import Search from './components/search';
-import {API} from './api/api'
+import {API,API2} from './api/api'
 import {reducer} from './reducers/index'
 import SimilarArtist from './components/similarartist';
 
