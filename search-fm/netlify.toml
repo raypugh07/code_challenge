@@ -1,9 +1,9 @@
 [build]
-    base = '../src'
-    publish = '../build'
+    base = '/search_fm'
+    publish = 'search_fm/build'
     command = 'npm run build'
 
 [[redirects]]
     from = '/*'
-    to = '../index.html'
+    to = '/index.html'
     status = 200
