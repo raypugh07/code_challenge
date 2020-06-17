@@ -1,5 +1,4 @@
-import React, { useEffect,useReducer } from 'react';
-import {BrowserRouter as Router,Switch,Route,Link} from 'react-router-dom'
+import React, { useReducer } from 'react';
 import './App.css';
 import Search from './components/search';
 import {API,API2} from './api/api'
